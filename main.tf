@@ -13,9 +13,9 @@ module "group_pl_rachuna-net" {
   variables = jsondecode(file("${path.module}/group_variables.json"))
 }
 
-# module "pl_rachuna-net" {
-#   source = "./pl.rachuna-net/"
-# }
+module "pl-rachuna-net" {
+  source = "./pl.rachuna-net/"
+}
 
 module "github" {
   source = "./github/"
