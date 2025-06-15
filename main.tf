@@ -9,8 +9,8 @@ module "_pl_rachuna-net" {
   labels         = local.labels
   icon_type      = "root"
 
-  badges    = jsondecode(file("${path.module}/group_badges.json"))
-  variables = jsondecode(file("${path.module}/group_variables.json"))
+  badges    = jsondecode(file("${path.module}/data/group_badges.json"))
+  variables = jsondecode(file("${path.module}/data/group_variables.json"))
 }
 
 module "pl-rachuna-net" {
