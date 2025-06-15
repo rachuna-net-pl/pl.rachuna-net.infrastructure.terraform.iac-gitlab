@@ -15,3 +15,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-terraform-modules-gi
   description = "Moduł służy do automatycznego zakładania projektów w GitLab z wykorzystaniem standaryzacji, ochrony branchy, tagów, zmiennych CI oraz integracji z SonarQube."
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-containers-terraform" {
+  name        = "pl.rachuna-net.containers.terraform"
+  description = "Obraz Dockerowy z narzędziem Terraform."
+  visibility  = "public"
+}
