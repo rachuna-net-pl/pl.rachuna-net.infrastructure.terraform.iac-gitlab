@@ -1,5 +1,5 @@
 module "_terraform" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-group.git?ref=feat/2"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-group.git?ref=feat/19"
 
   name         = "terraform"
   description  = "Repozytoria i moduły do zarządzania infrastrukturą jako kodem (IaC)."
