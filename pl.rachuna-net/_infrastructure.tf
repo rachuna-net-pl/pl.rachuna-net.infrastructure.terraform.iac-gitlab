@@ -1,5 +1,5 @@
 module "_infrastructure" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-group.git?ref=feat/19"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-group.git?ref=v1.0.0"
 
   name         = "infrastructure"
   description  = "Repozytoria i moduły do zarządzania infrastrukturą jako kodem (IaC)."
