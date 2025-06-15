@@ -1,5 +1,5 @@
 module "_pl_rachuna-net" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-group.git?ref=v1.0.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-group.git?ref=v1.1.0"
 
   name           = "pl.rachuna-net"
   description    = "https://rachuna-net.pl"

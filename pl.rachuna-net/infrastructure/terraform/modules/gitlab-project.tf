@@ -1,8 +1,8 @@
-module "gitlab-group" {
+module "gitlab-project" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=main"
 
-  name        = "gitlab-group"
-  description = "Moduł Terraform do automatycznego zakładania grup w GitLab wraz z etykietami, badge'ami oraz zmiennymi grupowymi."
+  name        = "gitlab-project"
+  description = "Moduł służy do automatycznego zakładania projektów w GitLab z wykorzystaniem standaryzacji, ochrony branchy, tagów, zmiennych CI oraz integracji z SonarQube."
   visibility  = "public"
   tags        = ["terraform", "terraform-modules"]
   icon_type   = "gitlab"
@@ -11,6 +11,6 @@ module "gitlab-group" {
   project_type = local.project_type
 
   # sonarqube
-  sonarqube_cloud_project_id = "pl.rachuna-net_gitlab-group"
+  sonarqube_cloud_project_id = "pl.rachuna-net_gitlab-project"
   is_enabled_sonarqube       = true
 }

@@ -1,5 +1,5 @@
 module "_modules" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-group.git?ref=v1.0.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-group.git?ref=v1.1.0"
 
   name         = "modules"
   description  = "Zbiór modułów Terraform do zarządzania infrastrukturą."
