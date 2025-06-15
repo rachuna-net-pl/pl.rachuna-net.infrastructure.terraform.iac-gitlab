@@ -1,4 +1,4 @@
-module "group_pl_rachuna-net" {
+module "_pl_rachuna-net" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-group.git?ref=feat/2"
 
   name           = "pl.rachuna-net"
