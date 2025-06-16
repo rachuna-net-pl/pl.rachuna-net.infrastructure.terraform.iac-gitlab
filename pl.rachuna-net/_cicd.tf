@@ -9,6 +9,6 @@ module "_cicd" {
 
 }
 
-# module "cicd" {
-#   source = "./cicd/"
-# }
+module "cicd" {
+  source = "./cicd/"
+}
