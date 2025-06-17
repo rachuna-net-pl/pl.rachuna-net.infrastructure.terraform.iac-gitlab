@@ -21,3 +21,9 @@ resource "github_repository" "pl-rachuna-net-containers-terraform" {
   description = "Obraz Dockerowy z narzędziem Terraform."
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-containers-semantic-release" {
+  name        = "pl.rachuna-net.containers.semantic-release"
+  description = "Obraz Dockerowy z narzędziem Semantic-Release."
+  visibility  = "public"
+}

@@ -2,7 +2,7 @@ module "gitlab-profile" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.0.0"
 
   name        = "gitlab-profile"
-  description = "GitLab profile"
+  description = ""
   visibility  = "public"
   tags        = ["gitlab-profile"]
   icon_type   = "gitlab-profile"
