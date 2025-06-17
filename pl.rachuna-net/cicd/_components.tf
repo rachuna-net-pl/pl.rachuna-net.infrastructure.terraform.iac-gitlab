@@ -8,6 +8,6 @@ module "_components" {
   icon_type    = "gitlab"
 }
 
-# module "components" {
-#   source = "./components/"
-# }
+module "components" {
+  source = "./components/"
+}
