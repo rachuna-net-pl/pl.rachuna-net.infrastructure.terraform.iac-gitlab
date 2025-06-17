@@ -25,6 +25,10 @@ module "_pl_rachuna-net" {
         description = "GitLab Token for GitLab"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["GITLAB_TOKEN"]
       }
+      SONAR_TOKEN = {
+        description = "SonarQube Token for GitLab"
+        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["SONAR_TOKEN"]
+      }
     }
   )
 }

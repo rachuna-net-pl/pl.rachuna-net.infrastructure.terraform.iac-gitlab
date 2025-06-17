@@ -25,11 +25,11 @@
     },
     "COMPONENT_VERSION_VALIDATE": {
         "description": "Validate of components",
-        "value": "v1.3.1"
+        "value": "v1.0.0"
     },
     "COMPONENT_VERSION_VERSIONING": {
         "description": "Versioning of components",
-        "value": "v1.0.1"
+        "value": "v1.0.0"
     },
     "CONTAINER_IMAGE_ANSIBLE": {
         "description": "container image version with ansible",
@@ -61,7 +61,7 @@
     },
     "CONTAINER_IMAGE_TERRAFORM": {
         "description": "container image version vith semantic-release",
-        "value": "registry.gitlab.com/pl.rachuna-net/containers/terraform:1.0.0"
+        "value": "registry.gitlab.com/pl.rachuna-net/containers/terraform:1.1.1"
     },
     "SONAR_HOST_URL": {
         "description": "SonarQube host URL",

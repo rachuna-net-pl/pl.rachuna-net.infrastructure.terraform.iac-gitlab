@@ -1,3 +1,9 @@
+resource "github_repository" "pl-rachuna-net-cicd-components-validate" {
+  name        = "pl.rachuna-net.cicd.components.validate"
+  description = "Komponent do automatycznej walidacji jakości i poprawności kodu w procesach CI/CD."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-cicd-components-versioning" {
   name        = "pl.rachuna-net.cicd.components.versioning"
   description = "Komponent wspierający automatyczne wersjonowanie kodu oraz procesów CI/CD w projektach GitLab."

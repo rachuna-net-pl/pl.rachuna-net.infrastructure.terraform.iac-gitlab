@@ -1,10 +1,10 @@
-module "versioning" {
+module "validate" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.0.1"
 
-  name        = "versioning"
-  description = "Komponent wspierający automatyczne wersjonowanie kodu oraz procesów CI/CD w projektach GitLab."
+  name        = "validate"
+  description = "Komponent do automatycznej walidacji jakości i poprawności kodu w procesach CI/CD."
   visibility  = "public"
-  tags        = ["gitlab-component", "semantic-release"]
+  tags        = ["gitlab-component"]
   icon_type   = "gitlab-component"
 
   parent_group = local.parent_name
@@ -12,4 +12,5 @@ module "versioning" {
 
   # sonarqube
   is_enabled_sonarqube = false
+
 }
