@@ -1,20 +1,16 @@
-variable "gitlab_token" {
-  type        = string
-  description = "Gitlab Token"
-}
-
 variable "gitlab_url" {
   type        = string
-  default     = "https://gitlab.com/api/v4/"
+  default     = "https://gitlab.com"
   description = "Gitlab Url"
 }
 
-variable "github_token" {
+variable "vault_address" {
   type        = string
-  description = "GitHub Token"
+  default     = "https://vault.rachuna-net.pl"
+  description = "Vault Address"
 }
 
-variable "github_owner" {
+variable "vault_token" {
   type        = string
-  description = "GitHub Owner (username or organization)"
+  description = "Vault Token"
 }
