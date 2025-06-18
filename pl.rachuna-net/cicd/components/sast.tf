@@ -1,8 +1,8 @@
-module "unit-test" {
+module "sast" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.0.1"
 
-  name        = "unit-test"
-  description = "Komponent do automatycznego uruchamiania testów jednostkowych w procesach CI/CD."
+  name        = "sast"
+  description = "Komponent do analizy statycznej kodu źródłowego (SAST)."
   visibility  = "public"
   tags        = ["gitlab-component"]
   icon_type   = "gitlab-component"

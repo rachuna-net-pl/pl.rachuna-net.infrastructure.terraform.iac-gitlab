@@ -1,3 +1,9 @@
+resource "github_repository" "pl-rachuna-net-cicd-components-sast" {
+  name        = "pl.rachuna-net.cicd.components.unit-test"
+  description = "Komponent do analizy statycznej kodu źródłowego (SAST)."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-cicd-components-unit-test" {
   name        = "pl.rachuna-net.cicd.components.unit-test"
   description = "Komponent do automatycznego uruchamiania testów jednostkowych w procesach CI/CD."
