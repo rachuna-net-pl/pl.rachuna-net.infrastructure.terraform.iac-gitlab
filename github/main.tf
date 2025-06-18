@@ -34,6 +34,12 @@ resource "github_repository" "pl-rachuna-net-containers-semantic-release" {
   visibility  = "public"
 }
 
+resource "github_repository" "pl-rachuna-net-containers-sonar-scanner" {
+  name        = "pl.rachuna-net.containers.sonar-scanner"
+  description = "Obraz Dockerowy z narzędziem Sonar Scanner do analizy kodu źródłowego."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-containers-terraform" {
   name        = "pl.rachuna-net.containers.terraform"
   description = "Obraz Dockerowy z narzędziem Terraform."
