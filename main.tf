@@ -14,20 +14,40 @@ module "_pl_rachuna-net" {
     jsondecode(file("${path.module}/data/group_variables.json")),
     {
       GITLAB_SSH_KEY = {
-        description = "SSH Key for GitLab"
+        description = "Klucz SSH dla gitlab runnera do komunikacji z gitlabem"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["GITLAB_SSH_KEY"]
       }
       VAULT_TOKEN = {
-        description = "Vault Token for GitLab"
+        description = "Vault token dla gitlab runnera do komunikacji z vaultem"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["VAULT_TOKEN"]
       }
       GITLAB_TOKEN = {
-        description = "GitLab Token for GitLab"
+        description = "GitLab Token dla gitlab runnera"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["GITLAB_TOKEN"]
       }
       SONAR_TOKEN = {
-        description = "SonarQube Token for GitLab"
+        description = "SonarQube Token dla gitlab runnera"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["SONAR_TOKEN"]
+      }
+      COMPONENT_VERSION_VERSIONING = {
+        description = "Numer wersji komponentu versjonowania"
+        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["COMPONENT_VERSION_VERSIONING"]
+      }
+      COMPONENT_VERSION_VALIDATE = {
+        description = "Numer wersji komponentu walidacji"
+        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["COMPONENT_VERSION_VALIDATE"]
+      }
+      CONTAINER_IMAGE_TERRAFORM = {
+        description = "Obraz kontenera Terraform"
+        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["CONTAINER_IMAGE_TERRAFORM"]
+      }
+      CONTAINER_IMAGE_SEMANTIC_RELEASE = {
+        description = "Obraz kontenera Semantic Release"
+        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["CONTAINER_IMAGE_SEMANTIC_RELEASE"]
+      }
+      CONTAINER_IMAGE_PYTHON = {
+        description = "Obraz kontenera Python"
+        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["CONTAINER_IMAGE_PYTHON"]
       }
     }
   )

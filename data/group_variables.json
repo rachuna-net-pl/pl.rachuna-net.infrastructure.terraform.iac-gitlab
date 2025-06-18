@@ -23,14 +23,6 @@
         "description": "Unit test of components",
         "value": "v1.1.1"
     },
-    "COMPONENT_VERSION_VALIDATE": {
-        "description": "Validate of components",
-        "value": "v1.0.0"
-    },
-    "COMPONENT_VERSION_VERSIONING": {
-        "description": "Versioning of components",
-        "value": "v1.0.0"
-    },
     "CONTAINER_IMAGE_ANSIBLE": {
         "description": "container image version with ansible",
         "value": "registry.gitlab.com/pl.rachuna-net/containers/ansible:1.0.0"
@@ -47,21 +39,9 @@
         "description": "container image version with packer",
         "value": "registry.gitlab.com/pl.rachuna-net/containers/packer:1.0.0"
     },
-    "CONTAINER_IMAGE_PYTHON": {
-        "description": "container image version with python",
-        "value": "registry.gitlab.com/pl.rachuna-net/containers/python:1.0.0"
-    },
-    "CONTAINER_IMAGE_SEMANTIC_RELEASE": {
-        "description": "container image version vith semantic-release",
-        "value": "registry.gitlab.com/pl.rachuna-net/containers/semantic-release:1.0.0"
-    },
     "CONTAINER_IMAGE_SONAR_SCANNER": {
         "description": "container image version with sonar-scanner",
         "value": "registry.gitlab.com/pl.rachuna-net/containers/sonar-scanner:1.0.0"
-    },
-    "CONTAINER_IMAGE_TERRAFORM": {
-        "description": "container image version vith semantic-release",
-        "value": "registry.gitlab.com/pl.rachuna-net/containers/terraform:1.1.1"
     },
     "SONAR_HOST_URL": {
         "description": "SonarQube host URL",
