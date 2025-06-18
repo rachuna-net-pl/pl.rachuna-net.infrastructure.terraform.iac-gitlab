@@ -1,3 +1,9 @@
+resource "github_repository" "pl-rachuna-net-cicd-components-unit-test" {
+  name        = "pl.rachuna-net.cicd.components.unit-test"
+  description = "Komponent do automatycznego uruchamiania testów jednostkowych w procesach CI/CD."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-cicd-components-validate" {
   name        = "pl.rachuna-net.cicd.components.validate"
   description = "Komponent do automatycznej walidacji jakości i poprawności kodu w procesach CI/CD."
@@ -7,6 +13,12 @@ resource "github_repository" "pl-rachuna-net-cicd-components-validate" {
 resource "github_repository" "pl-rachuna-net-cicd-components-versioning" {
   name        = "pl.rachuna-net.cicd.components.versioning"
   description = "Komponent wspierający automatyczne wersjonowanie kodu oraz procesów CI/CD w projektach GitLab."
+  visibility  = "public"
+}
+
+resource "github_repository" "pl-rachuna-net-containers-python" {
+  name        = "pl.rachuna-net.containers.python"
+  description = "Obraz Dockerowy z Python."
   visibility  = "public"
 }
 

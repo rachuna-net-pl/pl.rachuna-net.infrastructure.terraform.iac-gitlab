@@ -10,7 +10,7 @@ variable "vault_address" {
   description = "Vault Address"
 }
 
-variable "vault_token" {
-  type        = string
-  description = "Vault Token"
-}
+# variable "vault_token" {
+#   type        = string
+#   description = "Vault Token"
+# }

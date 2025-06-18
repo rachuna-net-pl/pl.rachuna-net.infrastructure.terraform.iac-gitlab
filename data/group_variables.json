@@ -19,10 +19,6 @@
         "description": "SAST of components",
         "value": "v1.0.1"
     },
-    "COMPONENT_VERSION_UNIT_TEST": {
-        "description": "Unit test of components",
-        "value": "v1.1.1"
-    },
     "CONTAINER_IMAGE_ANSIBLE": {
         "description": "container image version with ansible",
         "value": "registry.gitlab.com/pl.rachuna-net/containers/ansible:1.0.0"
