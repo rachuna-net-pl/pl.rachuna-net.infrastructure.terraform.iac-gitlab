@@ -29,6 +29,10 @@ module "_pl_rachuna-net" {
         description = "SonarQube Token dla gitlab runnera"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["SONAR_TOKEN"]
       }
+      COMPONENT_VERSION_RELEASE = {
+        description = "Numer wersji komponentu release"
+        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["COMPONENT_VERSION_RELEASE"]
+      }
       COMPONENT_VERSION_SAST = {
         description = "Numer wersji komponentu SAST"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["COMPONENT_VERSION_SAST"]
@@ -40,10 +44,6 @@ module "_pl_rachuna-net" {
       COMPONENT_VERSION_VALIDATE = {
         description = "Numer wersji komponentu walidacji"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["COMPONENT_VERSION_VALIDATE"]
-      }
-      COMPONENT_VERSION_VERSIONING = {
-        description = "Numer wersji komponentu versjonowania"
-        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["COMPONENT_VERSION_VERSIONING"]
       }
       CONTAINER_IMAGE_TERRAFORM = {
         description = "Obraz kontenera Terraform"
