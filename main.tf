@@ -29,6 +29,10 @@ module "_pl_rachuna-net" {
         description = "SonarQube Token dla gitlab runnera"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["SONAR_TOKEN"]
       }
+      COMPONENT_VERSION_SAST = {
+        description = "Numer wersji komponentu SAST"
+        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["COMPONENT_VERSION_SAST"]
+      },
       COMPONENT_VERSION_UNIT_TEST = {
         description = "Numer wersji komponentu testów jednostkowych"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["COMPONENT_VERSION_UNIT_TEST"]
@@ -49,6 +53,10 @@ module "_pl_rachuna-net" {
         description = "Obraz kontenera Semantic Release"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["CONTAINER_IMAGE_SEMANTIC_RELEASE"]
       }
+      CONTAINER_IMAGE_SONAR_SCANNER = {
+        description = "Obraz kontenera Sonar Scanner"
+        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["CONTAINER_IMAGE_SONAR_SCANNER"]
+      },
       CONTAINER_IMAGE_PYTHON = {
         description = "Obraz kontenera Python"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["CONTAINER_IMAGE_PYTHON"]
