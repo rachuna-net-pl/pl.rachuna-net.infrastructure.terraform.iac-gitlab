@@ -1,8 +1,8 @@
-module "versioning" {
+module "release" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.0.1"
 
-  name        = "versioning"
-  description = "Komponent wspierający automatyczne wersjonowanie kodu oraz procesów CI/CD w projektach GitLab."
+  name        = "release"
+  description = "Komponent do zarządzania wersjami i publikacji bibliotek i aplikacji na środowiska produkcyjne"
   visibility  = "public"
   tags        = ["gitlab-component", "semantic-release"]
   icon_type   = "gitlab-component"
