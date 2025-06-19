@@ -1,5 +1,5 @@
 resource "github_repository" "pl-rachuna-net-cicd-components-sast" {
-  name        = "pl.rachuna-net.cicd.components.unit-test"
+  name        = "pl.rachuna-net.cicd.components.sast"
   description = "Komponent do analizy statycznej kodu źródłowego (SAST)."
   visibility  = "public"
 }
@@ -19,6 +19,12 @@ resource "github_repository" "pl-rachuna-net-cicd-components-validate" {
 resource "github_repository" "pl-rachuna-net-cicd-components-versioning" {
   name        = "pl.rachuna-net.cicd.components.versioning"
   description = "Komponent wspierający automatyczne wersjonowanie kodu oraz procesów CI/CD w projektach GitLab."
+  visibility  = "public"
+}
+
+resource "github_repository" "pl-rachuna-net-cicd-gitlab-ci" {
+  name        = "pl.rachuna-net.cicd.gitlab-ci"
+  description = "Procesy do ciągłej integracji i dostarczania (CI/CD) dla projektów w grupie pl.rachuna-net."
   visibility  = "public"
 }
 

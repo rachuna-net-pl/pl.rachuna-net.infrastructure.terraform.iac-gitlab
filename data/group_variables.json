@@ -15,10 +15,6 @@
         "description": "Publish of components",
         "value": "v1.1.1"
     },
-    "COMPONENT_VERSION_SAST": {
-        "description": "SAST of components",
-        "value": "v1.0.1"
-    },
     "CONTAINER_IMAGE_ANSIBLE": {
         "description": "container image version with ansible",
         "value": "registry.gitlab.com/pl.rachuna-net/containers/ansible:1.0.0"
@@ -34,10 +30,6 @@
     "CONTAINER_IMAGE_PACKER": {
         "description": "container image version with packer",
         "value": "registry.gitlab.com/pl.rachuna-net/containers/packer:1.0.0"
-    },
-    "CONTAINER_IMAGE_SONAR_SCANNER": {
-        "description": "container image version with sonar-scanner",
-        "value": "registry.gitlab.com/pl.rachuna-net/containers/sonar-scanner:1.0.0"
     },
     "SONAR_HOST_URL": {
         "description": "SonarQube host URL",
