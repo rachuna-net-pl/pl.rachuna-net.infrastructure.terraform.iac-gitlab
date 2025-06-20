@@ -1,8 +1,8 @@
-module "deploy" {
+module "publish" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=feat/101"
 
-  name        = "deploy"
-  description = "Komponent do wdrożeń bibliotek i aplikacj na środowiska"
+  name        = "publish"
+  description = "Komponent do publikacji wersji aplikacji i bibliotek w procesach CI/CD."
   visibility  = "public"
   tags        = ["gitlab-component"]
   icon_type   = "gitlab-component"
@@ -15,7 +15,7 @@ module "deploy" {
     data.vault_kv_secret_v2.github.data["owner"],
     data.vault_kv_secret_v2.github.data["token"],
     data.vault_kv_secret_v2.github.data["owner"],
-    "pl.rachuna-net.cicd.components.deploy"
+    "pl.rachuna-net.cicd.components.publish"
   )
 
   # sonarqube
@@ -24,7 +24,7 @@ module "deploy" {
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:COMPONENT_VERSION_DEPLOY"
+      value       = "pl.rachuna-net:COMPONENT_VERSION_PUBLISH"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"
@@ -32,4 +32,3 @@ module "deploy" {
     }
   }
 }
-

@@ -10,8 +10,18 @@ module "release" {
   parent_group = local.parent_name
   project_type = local.project_type
 
+  mirror_url = format(
+    "https://%s:%s@github.com/%s/%s.git",
+    data.vault_kv_secret_v2.github.data["owner"],
+    data.vault_kv_secret_v2.github.data["token"],
+    data.vault_kv_secret_v2.github.data["owner"],
+    "pl.rachuna-net.cicd.components.release"
+  )
+
   # sonarqube
   is_enabled_sonarqube = false
+
+
 
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {

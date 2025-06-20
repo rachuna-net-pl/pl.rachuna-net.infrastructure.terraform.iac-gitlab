@@ -4,6 +4,18 @@ resource "github_repository" "pl-rachuna-net-cicd-components-build" {
   visibility  = "public"
 }
 
+resource "github_repository" "pl-rachuna-net-cicd-components-deploy" {
+  name        = "pl.rachuna-net.cicd.components.deploy"
+  description = "Komponent do wdrożeń bibliotek i aplikacj na środowiska"
+  visibility  = "public"
+}
+
+resource "github_repository" "pl-rachuna-net-cicd-components-publish" {
+  name        = "pl.rachuna-net.cicd.components.deploy"
+  description = "Komponent do publikacji wersji aplikacji i bibliotek w procesach CI/CD."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-cicd-components-release" {
   name        = "pl.rachuna-net.cicd.components.release"
   description = "Komponent do zarządzania wersjami i publikacji bibliotek i aplikacji na środowiska produkcyjne"
