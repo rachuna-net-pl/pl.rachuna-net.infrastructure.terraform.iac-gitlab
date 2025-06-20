@@ -1,3 +1,9 @@
+resource "github_repository" "pl-rachuna-net-cicd-components-build" {
+  name        = "pl.rachuna-net.cicd.components.build"
+  description = "Komponent do automatycznej budowy aplikacji i bibliotek w procesach CI/CD."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-cicd-components-release" {
   name        = "pl.rachuna-net.cicd.components.release"
   description = "Komponent do zarządzania wersjami i publikacji bibliotek i aplikacji na środowiska produkcyjne"
@@ -61,6 +67,12 @@ resource "github_repository" "pl-rachuna-net-containers-vault" {
 resource "github_repository" "pl-rachuna-net-infrastructure-terraform-iac-gitlab" {
   name        = "pl.rachuna-net.infrastructure.terraform.iac-gitlab"
   description = "Repozytorium zawierające infrastrukturę jako kod (IaC) do zarządzania środowiskiem GitLab przy użyciu Terraform. Umożliwia automatyzację tworzenia, konfiguracji i utrzymania zasobów GitLab."
+  visibility  = "public"
+}
+
+resource "github_repository" "pl-rachuna-net-infrastructure-terraform-iac-vault" {
+  name        = "pl.rachuna-net.infrastructure.terraform.iac-vault"
+  description = "Repozytorium zawierające infrastrukturę jako kod (IaC) do zarządzania środowiskiem Vault przy użyciu Terraform. Umożliwia automatyzację tworzenia, konfiguracji i utrzymania zasobów Vault."
   visibility  = "public"
 }
 

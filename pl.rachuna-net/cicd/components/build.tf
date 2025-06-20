@@ -1,8 +1,8 @@
-module "validate" {
+module "build" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=feat/101"
 
-  name        = "validate"
-  description = "Komponent do automatycznej walidacji jakości i poprawności kodu w procesach CI/CD."
+  name        = "build"
+  description = "Komponent do automatycznej budowy aplikacji i bibliotek w procesach CI/CD."
   visibility  = "public"
   tags        = ["gitlab-component"]
   icon_type   = "gitlab-component"
@@ -19,18 +19,17 @@ module "validate" {
     data.vault_kv_secret_v2.github.data["owner"],
     data.vault_kv_secret_v2.github.data["token"],
     data.vault_kv_secret_v2.github.data["owner"],
-    "pl.rachuna-net.cicd.components.validate"
+    "pl.rachuna-net.cicd.components.build"
   )
 
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:COMPONENT_VERSION_RELEASE"
+      value       = "pl.rachuna-net:COMPONENT_VERSION_BUILD"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"
       value       = "RELEASE_CANDIDATE_TAG"
     }
   }
-
 }

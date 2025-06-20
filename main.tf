@@ -61,6 +61,10 @@ module "_pl_rachuna-net" {
         description = "Obraz kontenera Python"
         value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["CONTAINER_IMAGE_PYTHON"]
       }
+      VAULT_ADDR = {
+        description = "Adres serwera Vault"
+        value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["VAULT_ADDR"]
+      }
     }
   )
 }

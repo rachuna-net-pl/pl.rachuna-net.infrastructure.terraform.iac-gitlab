@@ -38,9 +38,5 @@
     "SONAR_ORGANIZATION": {
         "description": "SonarQube organization",
         "value": "pl-rachuna-net"
-    },
-    "VAULT_ADDR": {
-        "description": "Vault address",
-        "value": "https://vault.pl.rachuna.net"
     }
 }

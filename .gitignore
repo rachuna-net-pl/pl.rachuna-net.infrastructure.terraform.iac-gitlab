@@ -6,3 +6,5 @@
 .vscode/
 imports.tf
 .yamllint
+
+pl.rachuna-net/infrastructure/terraform/iac-vault.tf

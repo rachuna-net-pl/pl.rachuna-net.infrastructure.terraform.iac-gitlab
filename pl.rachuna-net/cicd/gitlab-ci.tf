@@ -1,5 +1,5 @@
 module "gitlab-ci" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.0.1"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=feat/101"
 
   name        = "gitlab-ci"
   description = "Procesy do ciągłej integracji i dostarczania (CI/CD) dla projektów w grupie pl.rachuna-net"
@@ -12,4 +12,15 @@ module "gitlab-ci" {
 
   # sonarqube
   is_enabled_sonarqube = false
+
+  variables = {
+    PUBLISH_VAULT_SECRET_PATH = {
+      description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
+      value       = "pl.rachuna-net:GITLAB-CI"
+    }
+    PUBLISH_VAULT_VALUE_VARIABLE = {
+      description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"
+      value       = "RELEASE_CANDIDATE_VERSION"
+    }
+  }
 }
