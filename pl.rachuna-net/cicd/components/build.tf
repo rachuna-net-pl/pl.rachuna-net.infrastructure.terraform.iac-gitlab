@@ -25,7 +25,7 @@ module "build" {
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:COMPONENT_VERSION_BUILD"
+      value       = "pl.rachuna-net/cicd/components/build:COMPONENT_VERSION_BUILD"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"

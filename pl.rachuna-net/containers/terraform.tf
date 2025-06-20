@@ -25,7 +25,7 @@ module "terraform" {
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:CONTAINER_IMAGE_TERRAFORM"
+      value       = "pl.rachuna-net/containers/terraform:CONTAINER_IMAGE_TERRAFORM"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"

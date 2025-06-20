@@ -25,7 +25,7 @@ module "sonar-scanner" {
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:CONTAINER_IMAGE_SONAR_SCANNER"
+      value       = "pl.rachuna-net/containers/sonar-scanner:CONTAINER_IMAGE_SONAR_SCANNER"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"

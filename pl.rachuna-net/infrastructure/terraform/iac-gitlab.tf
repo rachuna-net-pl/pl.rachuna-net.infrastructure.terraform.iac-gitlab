@@ -11,6 +11,6 @@ module "iac-gitlab" {
   project_type = local.project_type
 
   # sonarqube
-  sonarqube_cloud_project_id = "pl.rachuna-net_gitlab"
+  sonarqube_cloud_project_id = "pl.rachuna-net_iac-gitlab"
   is_enabled_sonarqube       = true
 }

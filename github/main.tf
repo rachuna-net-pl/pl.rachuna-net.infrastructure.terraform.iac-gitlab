@@ -30,6 +30,13 @@ resource "github_repository" "pl-rachuna-net-cicd-components-integration-test" {
   visibility  = "public"
 }
 
+resource "github_repository" "pl-rachuna-net-cicd-components-prepare" {
+  name        = "pl.rachuna-net.cicd.components.prepare"
+  description = "Komponent do automatycznego uruchamiania testów integracyjnych w procesach CI/CD."
+  visibility  = "public"
+}
+
+
 resource "github_repository" "pl-rachuna-net-cicd-components-publish" {
   name        = "pl.rachuna-net.cicd.components.publish"
   description = "Komponent do publikacji wersji aplikacji i bibliotek w procesach CI/CD."
