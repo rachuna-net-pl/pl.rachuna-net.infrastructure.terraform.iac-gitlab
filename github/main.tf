@@ -1,3 +1,17 @@
+### pl.rachuna-net.cicd.gitlab-ci
+resource "github_repository" "pl-rachuna-net-cicd-gitlab-ci" {
+  name        = "pl.rachuna-net.cicd.gitlab-ci"
+  description = "Procesy do ciągłej integracji i dostarczania (CI/CD) dla projektów w grupie pl.rachuna-net."
+  visibility  = "public"
+}
+
+resource "github_repository" "pl-rachuna-net-cicd-gitlab-profile" {
+  name        = "pl.rachuna-net.cicd.gitlab-profile"
+  description = ""
+  visibility  = "public"
+}
+
+### pl.rachuna-net.cicd.components
 resource "github_repository" "pl-rachuna-net-cicd-components-build" {
   name        = "pl.rachuna-net.cicd.components.build"
   description = "Komponent do automatycznej budowy aplikacji i bibliotek w procesach CI/CD."
@@ -10,8 +24,14 @@ resource "github_repository" "pl-rachuna-net-cicd-components-deploy" {
   visibility  = "public"
 }
 
+resource "github_repository" "pl-rachuna-net-cicd-components-integration-test" {
+  name        = "pl.rachuna-net.cicd.components.integration-test"
+  description = "Komponent do automatycznego uruchamiania testów integracyjnych w procesach CI/CD."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-cicd-components-publish" {
-  name        = "pl.rachuna-net.cicd.components.deploy"
+  name        = "pl.rachuna-net.cicd.components.publish"
   description = "Komponent do publikacji wersji aplikacji i bibliotek w procesach CI/CD."
   visibility  = "public"
 }
@@ -40,12 +60,7 @@ resource "github_repository" "pl-rachuna-net-cicd-components-validate" {
   visibility  = "public"
 }
 
-resource "github_repository" "pl-rachuna-net-cicd-gitlab-ci" {
-  name        = "pl.rachuna-net.cicd.gitlab-ci"
-  description = "Procesy do ciągłej integracji i dostarczania (CI/CD) dla projektów w grupie pl.rachuna-net."
-  visibility  = "public"
-}
-
+### pl.rachuna-net.cicd.containers
 resource "github_repository" "pl-rachuna-net-containers-python" {
   name        = "pl.rachuna-net.containers.python"
   description = "Obraz Dockerowy z Python."
@@ -76,6 +91,7 @@ resource "github_repository" "pl-rachuna-net-containers-vault" {
   visibility  = "public"
 }
 
+###
 resource "github_repository" "pl-rachuna-net-infrastructure-terraform-iac-gitlab" {
   name        = "pl.rachuna-net.infrastructure.terraform.iac-gitlab"
   description = "Repozytorium zawierające infrastrukturę jako kod (IaC) do zarządzania środowiskiem GitLab przy użyciu Terraform. Umożliwia automatyzację tworzenia, konfiguracji i utrzymania zasobów GitLab."

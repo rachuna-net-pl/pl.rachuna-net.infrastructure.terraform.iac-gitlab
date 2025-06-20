@@ -1,5 +1,5 @@
 module "sast" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=feat/101"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
 
   name        = "sast"
   description = "Komponent do analizy statycznej kodu źródłowego (SAST)."
