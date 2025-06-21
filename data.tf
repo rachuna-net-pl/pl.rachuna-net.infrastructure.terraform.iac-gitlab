@@ -58,6 +58,11 @@ data "vault_kv_secret_v2" "gitlab_pl-rachuna-net_cicd_components_validate" {
   name  = "pl.rachuna-net/cicd/components/validate"
 }
 
+data "vault_kv_secret_v2" "gitlab_pl-rachuna-net_containers_mkdocs" {
+  mount = "kv-gitlab"
+  name  = "pl.rachuna-net/containers/mkdocs"
+}
+
 data "vault_kv_secret_v2" "gitlab_pl-rachuna-net_containers_python" {
   mount = "kv-gitlab"
   name  = "pl.rachuna-net/containers/python"

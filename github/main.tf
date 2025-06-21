@@ -68,6 +68,12 @@ resource "github_repository" "pl-rachuna-net-cicd-components-validate" {
 }
 
 ### pl.rachuna-net.cicd.containers
+resource "github_repository" "pl-rachuna-net-containers-mkdocs" {
+  name        = "pl.rachuna-net.containers.mkdocs"
+  description = "Obraz Dockerowy z MkDocs."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-containers-python" {
   name        = "pl.rachuna-net.containers.python"
   description = "Obraz Dockerowy z Python."
