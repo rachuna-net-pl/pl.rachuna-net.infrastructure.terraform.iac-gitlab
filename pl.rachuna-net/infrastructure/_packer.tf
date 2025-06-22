@@ -8,6 +8,6 @@ module "_packer" {
   icon_type    = "packer"
 }
 
-# module "packer" {
-#   source = "./packer/"
-# }
+module "packer" {
+  source = "./packer/"
+}
