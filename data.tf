@@ -63,6 +63,11 @@ data "vault_kv_secret_v2" "gitlab_pl-rachuna-net_containers_mkdocs" {
   name  = "pl.rachuna-net/containers/mkdocs"
 }
 
+data "vault_kv_secret_v2" "gitlab_pl-rachuna-net_containers_packer" {
+  mount = "kv-gitlab"
+  name  = "pl.rachuna-net/containers/packer"
+}
+
 data "vault_kv_secret_v2" "gitlab_pl-rachuna-net_containers_python" {
   mount = "kv-gitlab"
   name  = "pl.rachuna-net/containers/python"
