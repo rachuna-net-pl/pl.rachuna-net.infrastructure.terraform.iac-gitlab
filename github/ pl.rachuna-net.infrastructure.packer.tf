@@ -15,3 +15,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-packer-alma" {
   description = ""
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-infrastructure-packer-gitlab-profile" {
+  name        = " pl.rachuna-net.infrastructure.packer.gitlab-profile"
+  description = ""
+  visibility  = "public"
+}
