@@ -24,7 +24,7 @@ module "sast" {
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:COMPONENT_VERSION_SAST"
+      value       = "pl.rachuna-net/cicd/components/sast:COMPONENT_VERSION_SAST"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"

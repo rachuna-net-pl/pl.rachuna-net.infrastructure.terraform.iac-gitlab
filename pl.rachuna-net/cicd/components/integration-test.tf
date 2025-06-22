@@ -24,7 +24,7 @@ module "integration-test" {
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:COMPONENT_VERSION_INTEGRATION_TEST"
+      value       = "pl.rachuna-net/cicd/components/integration-test:COMPONENT_VERSION_INTEGRATION_TEST"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"

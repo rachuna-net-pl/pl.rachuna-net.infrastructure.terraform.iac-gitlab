@@ -1,35 +1,35 @@
-module "python" {
+module "prepare" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
 
-  name        = "python"
-  description = "Obraz Dockerowy z Python."
+  name        = "prepare"
+  description = "Komponent do przygotowania procesu CI/CD."
   visibility  = "public"
-  tags        = ["docker", "python"]
-  icon_type   = "python"
+  tags        = ["gitlab-component"]
+  icon_type   = "gitlab-component"
 
   parent_group = local.parent_name
   project_type = local.project_type
 
   # sonarqube
-  sonarqube_cloud_project_id = "pl.rachuna-net_python"
-  is_enabled_sonarqube       = true
+  is_enabled_sonarqube = false
 
+  # mirror
   mirror_url = format(
     "https://%s:%s@github.com/%s/%s.git",
     data.vault_kv_secret_v2.github.data["owner"],
     data.vault_kv_secret_v2.github.data["token"],
     data.vault_kv_secret_v2.github.data["owner"],
-    "pl.rachuna-net.containers.python"
+    "pl.rachuna-net.cicd.components.prepare"
   )
 
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net/containers/python:CONTAINER_IMAGE_PYTHON"
+      value       = "pl.rachuna-net/cicd/components/prepare:COMPONENT_VERSION_PREPARE"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"
-      value       = "CONTAINER_IMAGE_VERSION"
+      value       = "RELEASE_CANDIDATE_TAG"
     }
   }
 }

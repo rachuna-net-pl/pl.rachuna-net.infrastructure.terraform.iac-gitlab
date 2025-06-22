@@ -25,7 +25,7 @@ module "semantic-release" {
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:CONTAINER_IMAGE_SEMANTIC_RELEASE"
+      value       = "pl.rachuna-net/containers/semantic-release:CONTAINER_IMAGE_SEMANTIC_RELEASE"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"

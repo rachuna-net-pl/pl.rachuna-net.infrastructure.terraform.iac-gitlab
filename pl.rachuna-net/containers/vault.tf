@@ -25,7 +25,7 @@ module "vault" {
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:CONTAINER_IMAGE_VAULT"
+      value       = "pl.rachuna-net/containers/vault:CONTAINER_IMAGE_VAULT"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"

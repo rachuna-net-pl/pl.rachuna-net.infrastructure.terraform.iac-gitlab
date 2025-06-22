@@ -24,7 +24,7 @@ module "gitlab-ci" {
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:GITLAB-CI"
+      value       = "pl.rachuna-net/cicd/gitlab-ci:GITLAB_CI_VERSION"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"

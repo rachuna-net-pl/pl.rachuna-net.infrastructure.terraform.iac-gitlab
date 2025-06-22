@@ -25,7 +25,7 @@ module "validate" {
   variables = {
     PUBLISH_VAULT_SECRET_PATH = {
       description = "Ścieżka do sekrety Vault, gdzie będą publikowane zmienne środowiskowe"
-      value       = "pl.rachuna-net:COMPONENT_VERSION_RELEASE"
+      value       = "pl.rachuna-net/cicd/components/validate:COMPONENT_VERSION_VALIDATE"
     }
     PUBLISH_VAULT_VALUE_VARIABLE = {
       description = "Nazwa zmiennej środowiskowej, która będzie publikowana w Vault"
