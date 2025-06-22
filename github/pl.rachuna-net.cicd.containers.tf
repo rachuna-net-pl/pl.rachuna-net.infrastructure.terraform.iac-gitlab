@@ -10,6 +10,12 @@ resource "github_repository" "pl-rachuna-net-containers-mkdocs" {
   visibility  = "public"
 }
 
+resource "github_repository" "pl-rachuna-net-containers-packer" {
+  name        = "pl.rachuna-net.containers.packer"
+  description = "Obraz Dockerowy z Packer."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-containers-python" {
   name        = "pl.rachuna-net.containers.python"
   description = "Obraz Dockerowy z Python."
