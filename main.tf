@@ -17,14 +17,17 @@ module "_pl_rachuna-net" {
     }
     VAULT_TOKEN = {
       description = "Vault token dla gitlab runnera do komunikacji z vaultem"
+      masked      = true
       value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net_auth_gitlab.data["token"]
     }
     GITLAB_TOKEN = {
       description = "GitLab Token dla gitlab runnera"
+      masked      = true
       value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["GITLAB_TOKEN"]
     }
     SONAR_TOKEN = {
       description = "SonarQube Token dla gitlab runnera"
+      masked      = true
       value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["SONAR_TOKEN"]
     }
     GITLAB_CI_VERSION = {
@@ -70,6 +73,10 @@ module "_pl_rachuna-net" {
     CONTAINER_IMAGE_MKDOCS = {
       description = "Obraz kontenera MkDocs"
       value       = data.vault_kv_secret_v2.gitlab_pl-rachuna-net_containers_mkdocs.data["CONTAINER_IMAGE_MKDOCS"]
+    }
+    CONTAINER_IMAGE_PACKER = {
+      description = "Obraz kontenera Packer"
+      value       = data.vault_kv_secret_v2.gitlab_pl-rachuna-net_containers_packer.data["CONTAINER_IMAGE_PACKER"]
     }
     CONTAINER_IMAGE_PYTHON = {
       description = "Obraz kontenera Python"
