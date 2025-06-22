@@ -9,3 +9,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-packer-alpine" {
   description = ""
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-infrastructure-packer-alma" {
+  name        = " pl.rachuna-net.infrastructure.packer.alma"
+  description = ""
+  visibility  = "public"
+}
