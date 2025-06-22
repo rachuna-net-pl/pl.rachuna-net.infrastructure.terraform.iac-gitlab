@@ -11,7 +11,7 @@ module "packer" {
   project_type = local.project_type
 
   # sonarqube
-  is_enabled_sonarqube       = false
+  is_enabled_sonarqube = false
 
   mirror_url = format(
     "https://%s:%s@github.com/%s/%s.git",
