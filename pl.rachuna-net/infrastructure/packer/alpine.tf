@@ -19,5 +19,5 @@ module "alpine" {
   )
 
   # sonarqube
-  is_enabled_sonarqube       = false
+  is_enabled_sonarqube = false
 }
