@@ -42,7 +42,7 @@ resource "github_repository" "pl-rachuna-net-infrastructure-terraform-modules-pr
 }
 
 resource "github_repository" "pl-rachuna-net-infrastructure-terraform-modules-download-container" {
-  name        = "pl.rachuna-net.infrastructure.terraform.modules.proxmox-container"
+  name        = "pl.rachuna-net.infrastructure.terraform.modules.proxmox-download-container"
   description = "Moduł Terraform do pobierania szablonów kontenerów LXC (CT) z internetu i rejestrowania ich w środowisku Proxmox VE."
   visibility  = "public"
 }
