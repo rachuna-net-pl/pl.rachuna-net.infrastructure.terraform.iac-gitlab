@@ -8,6 +8,6 @@ module "_ansible" {
   icon_type    = "ansible"
 }
 
-# module "ansible" {
-#   source = "./ansible/"
-# }
+module "ansible" {
+  source = "./ansible/"
+}
