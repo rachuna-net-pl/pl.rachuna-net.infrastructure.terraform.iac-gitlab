@@ -27,3 +27,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-config
   description = "Ansible Role do konfiguracji sudo na serwerach Linux."
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-set-hotname" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.set-hotname"
+  description = "Ansible Role do ustawiania nazwy hosta (hostname) na serwerach Linux."
+  visibility  = "public"
+}
