@@ -23,7 +23,6 @@ resource "github_repository" "pl-rachuna-net-infrastructure-terraform-iac-vault"
 }
 
 # modules
-
 resource "github_repository" "pl-rachuna-net-infrastructure-terraform-modules-gitlab-group" {
   name        = "pl.rachuna-net.infrastructure.terraform.modules.gitlab-group"
   description = "Moduł Terraform do automatycznego zakładania grup w GitLab wraz z etykietami, badge'ami oraz zmiennymi grupowymi."
@@ -33,5 +32,11 @@ resource "github_repository" "pl-rachuna-net-infrastructure-terraform-modules-gi
 resource "github_repository" "pl-rachuna-net-infrastructure-terraform-modules-gitlab-project" {
   name        = "pl.rachuna-net.infrastructure.terraform.modules.gitlab-project"
   description = "Moduł służy do automatycznego zakładania projektów w GitLab z wykorzystaniem standaryzacji, ochrony branchy, tagów, zmiennych CI oraz integracji z SonarQube."
+  visibility  = "public"
+}
+
+resource "github_repository" "pl-rachuna-net-infrastructure-terraform-modules-proxmox-container" {
+  name        = "pl.rachuna-net.infrastructure.terraform.modules.proxmox-container"
+  description = "Moduł Terraform umożliwia automatyczne tworzenie i zarządzanie kontenerami LXC (CT) w środowisku Proxmox VE."
   visibility  = "public"
 }
