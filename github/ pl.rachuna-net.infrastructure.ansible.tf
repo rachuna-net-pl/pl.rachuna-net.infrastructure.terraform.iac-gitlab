@@ -33,3 +33,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-set-ho
   description = "Ansible Role do ustawiania nazwy hosta (hostname) na serwerach Linux."
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-install-packages" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.install-packages"
+  description = "Ansible Role do instalacji pakietów na serwerach Linux."
+  visibility  = "public"
+}
