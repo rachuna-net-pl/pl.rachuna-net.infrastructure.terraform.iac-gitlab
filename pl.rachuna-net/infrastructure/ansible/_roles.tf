@@ -6,7 +6,7 @@ module "_roles" {
   parent_group = local.parent_name
   visibility   = "public"
   icon_type    = "ansible"
-  
+
 }
 
 module "roles" {

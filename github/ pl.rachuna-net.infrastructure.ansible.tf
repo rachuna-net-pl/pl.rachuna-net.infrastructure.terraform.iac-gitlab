@@ -15,3 +15,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-playbooks-li
   description = "Playbook Ansible do automatycznego hardeningu i provisioningu systemów Linux."
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-configure-ssh" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.configure-ssh"
+  description = "Ansible Role do konfiguracji SSH na serwerach Linux."
+  visibility  = "public"
+}

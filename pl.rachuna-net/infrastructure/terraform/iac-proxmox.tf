@@ -1,7 +1,7 @@
 module "iac-proxmox" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
 
-  name        = "proxmox"
+  name        = "iac-proxmox"
   description = "Repozytorium zawierające infrastrukturę jako kod (IaC) do zarządzania środowiskiem Proxmox przy użyciu Terraform. Umożliwia automatyzację tworzenia, konfiguracji i utrzymania zasobów Proxmox."
   visibility  = "public"
   tags        = ["terraform"]
