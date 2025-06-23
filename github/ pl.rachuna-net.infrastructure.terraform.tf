@@ -46,3 +46,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-terraform-modules-do
   description = "Moduł Terraform do pobierania szablonów kontenerów LXC (CT) z internetu i rejestrowania ich w środowisku Proxmox VE."
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-infrastructure-terraform-modules-proxmox-vm" {
+  name        = "pl.rachuna-net.infrastructure.terraform.modules.proxmox-vm"
+  description = "Moduł Terraform umożliwia automatyczne tworzenie i zarządzanie maszynami wirtualnymi (VM) w środowisku Proxmox VE."
+  visibility  = "public"
+}
