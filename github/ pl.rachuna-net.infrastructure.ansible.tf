@@ -40,6 +40,12 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-instal
   visibility  = "public"
 }
 
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-proxmox-nodes" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.proxmox-nodes"
+  description = "Ansible Role do zarządzania węzłami Proxmox VE."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-ca-certficates" {
   name        = "pl.rachuna-net.infrastructure.ansible.roles.ca-certficates"
   description = "Ansible Role do konfiguracji certyfikatów CA na serwerach Linux."
