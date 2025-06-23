@@ -21,3 +21,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-config
   description = "Ansible Role do konfiguracji SSH na serwerach Linux."
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-configure-sudo" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.configure-sudo"
+  description = "Ansible Role do konfiguracji sudo na serwerach Linux."
+  visibility  = "public"
+}
