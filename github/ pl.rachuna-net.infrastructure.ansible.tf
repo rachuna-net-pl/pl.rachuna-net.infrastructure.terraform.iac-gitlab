@@ -45,3 +45,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-ca-cer
   description = "Ansible Role do konfiguracji certyfikatów CA na serwerach Linux."
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-users-managment" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.users-managment"
+  description = "Ansible Role do zarządzania użytkownikami na serwerach Linux."
+  visibility  = "public"
+}
