@@ -1,14 +1,14 @@
-module "_playbooks" {
+module "_roles" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-group.git?ref=v1.1.0"
 
-  name         = "playbooks"
-  description  = "Repozytoria automatyzacji zadań przy użyciu Ansible Playbooks."
+  name         = "roles"
+  description  = "Repozytoria Ansible Roles do zarządzania automatyzacją zadań przy użyciu Ansible."
   parent_group = local.parent_name
   visibility   = "public"
   icon_type    = "ansible"
   
 }
 
-module "playbooks" {
-  source = "./playbooks/"
+module "roles" {
+  source = "./roles/"
 }
