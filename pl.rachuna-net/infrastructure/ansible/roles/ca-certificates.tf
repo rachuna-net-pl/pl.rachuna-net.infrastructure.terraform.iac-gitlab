@@ -1,8 +1,8 @@
-module "set-hotname" {
+module "ca-certificates" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
 
-  name        = "set-hotname"
-  description = "Ansible Role do ustawiania nazwy hosta (hostname) na serwerach Linux."
+  name        = "ca-certificates"
+  description = "Ansible Role do konfiguracji certyfikatów CA na serwerach Linux."
   visibility  = "public"
   tags        = ["inventory", "ansible"]
   icon_type   = "linux"
@@ -18,6 +18,6 @@ module "set-hotname" {
     data.vault_kv_secret_v2.github.data["owner"],
     data.vault_kv_secret_v2.github.data["token"],
     data.vault_kv_secret_v2.github.data["owner"],
-    "pl.rachuna-net.infrastructure.ansible.roles.set-hotname"
+    "pl.rachuna-net.infrastructure.ansible.roles.ca-certificates"
   )
 }

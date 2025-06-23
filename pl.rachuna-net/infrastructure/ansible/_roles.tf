@@ -8,10 +8,6 @@ module "_roles" {
   icon_type    = "ansible"
 
   variables = {
-    GITLAB_SSH_KEY = {
-      description = "Klucz SSH do maszyn testowych molecule dla Ansible Roles."
-      value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net-infrastructure-ansible-roles.data["GITLAB_SSH_KEY"]
-    }
     TEST_PROXMOX_HOST = {
       description = "Adres hosta Proxmox do testów."
       value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net-infrastructure-ansible-roles.data["TEST_PROXMOX_HOST"]

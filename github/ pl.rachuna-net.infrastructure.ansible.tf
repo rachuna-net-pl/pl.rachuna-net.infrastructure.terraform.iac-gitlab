@@ -28,8 +28,8 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-config
   visibility  = "public"
 }
 
-resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-set-hotname" {
-  name        = "pl.rachuna-net.infrastructure.ansible.roles.set-hotname"
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-set-hostname" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.set-hostname"
   description = "Ansible Role do ustawiania nazwy hosta (hostname) na serwerach Linux."
   visibility  = "public"
 }
@@ -46,8 +46,8 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-proxmo
   visibility  = "public"
 }
 
-resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-ca-certficates" {
-  name        = "pl.rachuna-net.infrastructure.ansible.roles.ca-certficates"
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-ca-certificates" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.ca-certificates"
   description = "Ansible Role do konfiguracji certyfikatów CA na serwerach Linux."
   visibility  = "public"
 }
