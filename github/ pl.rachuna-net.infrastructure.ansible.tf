@@ -39,3 +39,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-instal
   description = "Ansible Role do instalacji pakietów na serwerach Linux."
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-ca-certficates" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.ca-certficates"
+  description = "Ansible Role do konfiguracji certyfikatów CA na serwerach Linux."
+  visibility  = "public"
+}
