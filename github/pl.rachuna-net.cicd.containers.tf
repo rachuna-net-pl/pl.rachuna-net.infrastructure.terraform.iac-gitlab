@@ -4,6 +4,12 @@ resource "github_repository" "pl-rachuna-net-containers-gitlab-profile" {
   visibility  = "public"
 }
 
+resource "github_repository" "pl-rachuna-net-containers-ansible" {
+  name        = "pl.rachuna-net.containers.ansible"
+  description = "Obraz Dockerowy z Ansible i Molecule."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-containers-mkdocs" {
   name        = "pl.rachuna-net.containers.mkdocs"
   description = "Obraz Dockerowy z MkDocs."

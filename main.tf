@@ -70,6 +70,10 @@ module "_pl_rachuna-net" {
       description = "Numer wersji komponentu walidacji"
       value       = data.vault_kv_secret_v2.gitlab_pl-rachuna-net_cicd_components_validate.data["COMPONENT_VERSION_VALIDATE"]
     }
+    CONTAINER_IMAGE_ANSIBLE = {
+      description = "Obraz kontenera Ansible"
+      value       = data.vault_kv_secret_v2.gitlab_pl-rachuna-net_containers_ansible.data["CONTAINER_IMAGE_ANSIBLE"]
+    }
     CONTAINER_IMAGE_MKDOCS = {
       description = "Obraz kontenera MkDocs"
       value       = data.vault_kv_secret_v2.gitlab_pl-rachuna-net_containers_mkdocs.data["CONTAINER_IMAGE_MKDOCS"]

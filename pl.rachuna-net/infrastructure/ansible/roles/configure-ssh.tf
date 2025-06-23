@@ -1,14 +1,14 @@
-module "gitlab-profile" {
+module "configure-ssh" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
 
-  name        = "gitlab-profile"
-  description = ""
+  name        = "configure-ssh"
+  description = "Ansible Role do konfiguracji SSH na serwerach Linux."
   visibility  = "public"
-  tags        = ["gitlab-profile"]
-  icon_type   = "gitlab-profile"
+  tags        = ["inventory", "ansible"]
+  icon_type   = "linux"
 
   parent_group = local.parent_name
-  project_type = "gitlab-profile"
+  project_type = "ansible-role"
 
   # sonarqube
   is_enabled_sonarqube = false
@@ -18,6 +18,6 @@ module "gitlab-profile" {
     data.vault_kv_secret_v2.github.data["owner"],
     data.vault_kv_secret_v2.github.data["token"],
     data.vault_kv_secret_v2.github.data["owner"],
-    "pl.rachuna-net.infrastructure.terraform.gitlab-profile"
+    "pl.rachuna-net.infrastructure.ansible.roles.configure-ssh"
   )
 }

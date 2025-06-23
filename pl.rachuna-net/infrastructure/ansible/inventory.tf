@@ -1,14 +1,14 @@
-module "gitlab-profile" {
+module "inventory" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
 
-  name        = "gitlab-profile"
-  description = ""
+  name        = "inventory"
+  description = "Repozytorium Ansible Inventory do zarządzania konfiguracją i automatyzacją zadań przy użyciu Ansible."
   visibility  = "public"
-  tags        = ["gitlab-profile"]
-  icon_type   = "gitlab-profile"
+  tags        = ["inventory", "ansible"]
+  icon_type   = "ansible"
 
   parent_group = local.parent_name
-  project_type = "gitlab-profile"
+  project_type = "ansible-inventory"
 
   # sonarqube
   is_enabled_sonarqube = false
@@ -18,6 +18,6 @@ module "gitlab-profile" {
     data.vault_kv_secret_v2.github.data["owner"],
     data.vault_kv_secret_v2.github.data["token"],
     data.vault_kv_secret_v2.github.data["owner"],
-    "pl.rachuna-net.infrastructure.terraform.gitlab-profile"
+    "pl.rachuna-net.infrastructure.ansible.invnentory"
   )
 }
