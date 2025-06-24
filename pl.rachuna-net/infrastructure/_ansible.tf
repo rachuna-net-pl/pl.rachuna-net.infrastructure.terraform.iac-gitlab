@@ -8,10 +8,6 @@ module "_ansible" {
   icon_type    = "ansible"
 
   variables = {
-    GITLAB_SSH_KEY = {
-      description = "Klucz SSH do maszyn testowych molecule dla Ansible Roles."
-      value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net-infrastructure-ansible.data["GITLAB_SSH_KEY"]
-    }
     ANSIBLE_USER = {
       description = "Użytkownik Ansible do zarządzania maszynami vm."
       masked      = true

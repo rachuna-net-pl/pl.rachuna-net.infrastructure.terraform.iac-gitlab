@@ -52,8 +52,8 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-ca-cer
   visibility  = "public"
 }
 
-resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-users-managment" {
-  name        = "pl.rachuna-net.infrastructure.ansible.roles.users-managment"
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-users-management" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.users-management"
   description = "Ansible Role do zarządzania użytkownikami na serwerach Linux."
   visibility  = "public"
 }

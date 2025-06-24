@@ -1,7 +1,7 @@
-module "users-managment" {
+module "users-management" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
 
-  name        = "users-managment"
+  name        = "users-management"
   description = "Ansible Role do zarządzania użytkownikami na serwerach Linux."
   visibility  = "public"
   tags        = ["inventory", "ansible"]
@@ -18,6 +18,6 @@ module "users-managment" {
     data.vault_kv_secret_v2.github.data["owner"],
     data.vault_kv_secret_v2.github.data["token"],
     data.vault_kv_secret_v2.github.data["owner"],
-    "pl.rachuna-net.infrastructure.ansible.roles.users-managment"
+    "pl.rachuna-net.infrastructure.ansible.roles.users-management"
   )
 }
