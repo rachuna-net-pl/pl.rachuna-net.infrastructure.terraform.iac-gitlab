@@ -16,6 +16,12 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-playbooks-li
   visibility  = "public"
 }
 
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-playbooks-gitlab-runners" {
+  name        = "pl.rachuna-net.infrastructure.ansible.playbooks.gitlab-runners"
+  description = "Playbook Ansible do automatyzacji instalacji i konfiguracji GitLab Runnerów."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-configure-ssh" {
   name        = "pl.rachuna-net.infrastructure.ansible.roles.configure-ssh"
   description = "Ansible Role do konfiguracji SSH na serwerach Linux."
