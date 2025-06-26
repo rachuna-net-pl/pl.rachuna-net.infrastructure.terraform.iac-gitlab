@@ -16,6 +16,12 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-playbooks-li
   visibility  = "public"
 }
 
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-playbooks-gitlab-runners" {
+  name        = "pl.rachuna-net.infrastructure.ansible.playbooks.gitlab-runners"
+  description = "Playbook Ansible do automatyzacji instalacji i konfiguracji GitLab Runnerów."
+  visibility  = "public"
+}
+
 resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-configure-ssh" {
   name        = "pl.rachuna-net.infrastructure.ansible.roles.configure-ssh"
   description = "Ansible Role do konfiguracji SSH na serwerach Linux."
@@ -52,8 +58,14 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-ca-cer
   visibility  = "public"
 }
 
-resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-users-managment" {
-  name        = "pl.rachuna-net.infrastructure.ansible.roles.users-managment"
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-users-management" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.users-management"
   description = "Ansible Role do zarządzania użytkownikami na serwerach Linux."
+  visibility  = "public"
+}
+
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-deploy-gitlab-runner" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.deploy-gitlab-runner"
+  description = "Ansible Role do automatyzacji instalacji i konfiguracji GitLab Runnerów."
   visibility  = "public"
 }

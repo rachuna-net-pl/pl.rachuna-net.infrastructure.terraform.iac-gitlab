@@ -1,5 +1,5 @@
 module "proxmox-vm" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "proxmox-vm"
   description = "Moduł Terraform umożliwia automatyczne tworzenie i zarządzanie maszynami wirtualnymi (VM) w środowisku Proxmox VE."

@@ -1,5 +1,5 @@
 module "ca-certificates" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "ca-certificates"
   description = "Ansible Role do konfiguracji certyfikatów CA na serwerach Linux."

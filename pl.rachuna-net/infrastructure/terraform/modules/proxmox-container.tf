@@ -1,5 +1,5 @@
 module "proxmox-container" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "proxmox-container"
   description = "Moduł Terraform umożliwia automatyczne tworzenie i zarządzanie kontenerami LXC (CT) w środowisku Proxmox VE."

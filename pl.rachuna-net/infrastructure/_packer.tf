@@ -42,7 +42,7 @@ module "_packer" {
     }
     PKR_VAR_ssh_public_key = {
       description = "Publiczny klucz SSH"
-      value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net-infrastructure-packer.data["PKR_VAR_ssh_public_key"]
+      value       = data.vault_kv_secret_v2.gitlab_pl_rachuna_net.data["GITLAB_SSH_PUBKEY"]
     }
   }
 }

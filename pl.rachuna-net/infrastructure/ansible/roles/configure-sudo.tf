@@ -1,5 +1,5 @@
 module "configure-sudo" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "configure-sudo"
   description = "Ansible Role do konfiguracji sudo na serwerach Linux."

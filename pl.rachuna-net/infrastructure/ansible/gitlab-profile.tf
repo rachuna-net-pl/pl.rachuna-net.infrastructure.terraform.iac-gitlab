@@ -1,23 +1,24 @@
-module "ubuntu" {
+module "gitlab-profile" {
   source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
-  name        = "ubuntu"
-  description = "Template Ubuntu dla Proxmox generowany przez Packer"
+  name        = "gitlab-profile"
+  description = ""
   visibility  = "public"
-  tags        = ["terraform"]
-  icon_type   = "ubuntu"
+  tags        = ["gitlab-profile"]
+  icon_type   = "gitlab-profile"
 
   parent_group = local.parent_name
-  project_type = local.project_type
+  project_type = "gitlab-profile"
 
   mirror_url = format(
     "https://%s:%s@github.com/%s/%s.git",
     data.vault_kv_secret_v2.github.data["owner"],
     data.vault_kv_secret_v2.github.data["token"],
     data.vault_kv_secret_v2.github.data["owner"],
-    "pl.rachuna-net.infrastructure.packer.ubuntu"
+    "pl.rachuna-net.infrastructure.ansible.gitlab-profile"
   )
 
   # sonarqube
   is_enabled_sonarqube = false
-}
+
+} 
