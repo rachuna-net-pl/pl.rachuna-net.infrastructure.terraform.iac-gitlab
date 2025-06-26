@@ -1,5 +1,5 @@
 module "packer" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "packer"
   description = "Obraz Dockerowy z Packer."

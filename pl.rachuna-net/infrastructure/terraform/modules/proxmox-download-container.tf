@@ -1,5 +1,5 @@
 module "proxmox-download-container" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "proxmox-download-container"
   description = "Moduł Terraform do pobierania szablonów kontenerów LXC (CT) z internetu i rejestrowania ich w środowisku Proxmox VE."

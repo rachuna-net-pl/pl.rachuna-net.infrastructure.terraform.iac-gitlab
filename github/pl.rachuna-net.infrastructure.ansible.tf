@@ -63,3 +63,9 @@ resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-users-
   description = "Ansible Role do zarządzania użytkownikami na serwerach Linux."
   visibility  = "public"
 }
+
+resource "github_repository" "pl-rachuna-net-infrastructure-ansible-roles-deploy-gitlab-runner" {
+  name        = "pl.rachuna-net.infrastructure.ansible.roles.deploy-gitlab-runner"
+  description = "Ansible Role do automatyzacji instalacji i konfiguracji GitLab Runnerów."
+  visibility  = "public"
+}

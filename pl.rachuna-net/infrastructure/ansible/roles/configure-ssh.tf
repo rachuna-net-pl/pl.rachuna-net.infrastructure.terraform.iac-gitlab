@@ -1,5 +1,5 @@
 module "configure-ssh" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "configure-ssh"
   description = "Ansible Role do konfiguracji SSH na serwerach Linux."

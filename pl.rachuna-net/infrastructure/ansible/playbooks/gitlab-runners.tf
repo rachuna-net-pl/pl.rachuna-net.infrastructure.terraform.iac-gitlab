@@ -1,11 +1,11 @@
 module "gitlab-runners" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "gitlab-runners"
   description = "Playbook Ansible do automatyzacji instalacji i konfiguracji GitLab Runnerów."
   visibility  = "public"
   tags        = ["inventory", "ansible"]
-  icon_type   = "linux"
+  icon_type   = "gitlab"
 
   parent_group = local.parent_name
   project_type = "ansible-playbook"

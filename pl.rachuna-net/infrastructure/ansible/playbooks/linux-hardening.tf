@@ -1,5 +1,5 @@
 module "linux-hardening" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "linux-hardening"
   description = "Playbook Ansible do automatycznego hardeningu i provisioningu systemów Linux."

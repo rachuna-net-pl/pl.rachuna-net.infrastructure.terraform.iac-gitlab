@@ -1,5 +1,5 @@
 module "integration-test" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "integration-test"
   description = "Komponent do automatycznego uruchamiania testów integracyjnych w procesach CI/CD."

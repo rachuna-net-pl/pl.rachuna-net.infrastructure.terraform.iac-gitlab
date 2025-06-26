@@ -1,5 +1,5 @@
 module "vagrant" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.2.1"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "vagrant"
   description = "Konfiguracja środowiska deweloperskiego z użyciem Vagrant i VirtualBox."

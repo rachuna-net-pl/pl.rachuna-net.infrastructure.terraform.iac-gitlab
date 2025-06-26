@@ -1,5 +1,5 @@
 module "users-management" {
-  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.1.0"
+  source = "git@gitlab.com:pl.rachuna-net/infrastructure/terraform/modules/gitlab-project.git?ref=v1.3.0"
 
   name        = "users-management"
   description = "Ansible Role do zarządzania użytkownikami na serwerach Linux."
