@@ -9,8 +9,3 @@ variable "vault_address" {
   default     = "https://vault.rachuna-net.pl"
   description = "Vault Address"
 }
-
-# variable "vault_token" {
-#   type        = string
-#   description = "Vault Token"
-# }

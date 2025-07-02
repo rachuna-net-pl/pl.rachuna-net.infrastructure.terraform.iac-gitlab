@@ -3,12 +3,12 @@ module "_pl_rachuna-net" {
 
   name           = "pl.rachuna-net"
   description    = "https://rachuna-net.pl"
-  parent_group   = "" # Brak grupy nadrzędnej
+  parent_group   = ""
   visibility     = "public"
   default_branch = "main"
-  labels         = jsondecode(file("${path.module}/data/labels.json"))
   icon_type      = "root"
-
+  labels         = jsondecode(file("${path.module}/data/labels.json"))
+  
   badges = jsondecode(file("${path.module}/data/group_badges.json"))
   variables = {
     GITLAB_SSH_KEY = {
